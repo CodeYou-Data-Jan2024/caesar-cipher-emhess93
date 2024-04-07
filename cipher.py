@@ -6,9 +6,12 @@ sentence = input("Enter a sentence: ")
 #create lower case list of words
 sentence = sentence.lower()
 
+#initialize new sentence
 new_sent = ""
 
+#loop through the senetence, if it has letter then replace from dict, else same & add to new sent
 for letter in range(0, len(sentence)):
     new_sent = new_sent + (alphabet_dict.get(sentence[letter], sentence[letter]))
 print(new_sent)
+
 
